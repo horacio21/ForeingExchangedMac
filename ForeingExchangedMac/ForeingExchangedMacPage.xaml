@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:ForeingExchangedMac" 
+    x:Class="ForeingExchangedMac.ForeingExchangedMacPage">
+    <StackLayout
+        Padding="10, 30, 10, 10 ">
+         <Label
+            Text="Foreing Exchanged"
+            HorizontalOptions="Center"
+            FontSize="Large">
+        </Label>
+         <Label
+            Text="Pesos:">
+        </Label>
+        <Entry
+            x:Name="PesosEntry"
+            Keyboard="Numeric"
+            Placeholder="Enter the amount in pesos..."
+            PlaceholderColor="Black">
+        </Entry>
+        <Button
+            x:Name="ConvertButton"
+            Text="Convert">
+        </Button>
+         <Label
+            Text="Dollars:">
+        </Label>
+        <Entry
+            x:Name="DollarsEntry"
+            IsEnabled="false"
+            Placeholder="Value in Dollars..."
+            PlaceholderColor="Black">
+        </Entry>
+         <Label
+            Text="Euros:">
+        </Label>
+        <Entry
+            x:Name="EurosEntry"
+            IsEnabled="false"
+            Placeholder="Value in Euros..."
+            PlaceholderColor="Black">
+        </Entry>
+         <Label
+            Text="Pounds:">
+        </Label>
+        <Entry
+            x:Name="PoundsEntry"
+            IsEnabled="false"
+            Placeholder="Value in Pounds..."
+            PlaceholderColor="Black">
+        </Entry>
+    </StackLayout>
+</ContentPage>
